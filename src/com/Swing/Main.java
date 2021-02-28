@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 
 public class Main {
 
@@ -92,6 +94,44 @@ public class Main {
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
+            }
+        });
+
+        // список событый формы
+        jFrame.addWindowListener(new WindowListener() {
+            @Override
+            public void windowOpened(WindowEvent e) { //окно открыто
+
+            }
+
+            @Override
+            public void windowClosing(WindowEvent e) {// закрытие окна
+
+            }
+
+            @Override
+            public void windowClosed(WindowEvent e) { // окно закрыто
+
+            }
+
+            @Override
+            public void windowIconified(WindowEvent e) { // Значок окна установлен
+
+            }
+
+            @Override
+            public void windowDeiconified(WindowEvent e) {// Значок окна не установлен
+
+            }
+
+            @Override
+            public void windowActivated(WindowEvent e) { // окно Активировано
+
+            }
+
+            @Override
+            public void windowDeactivated(WindowEvent e) { // окно не Активировано
+
             }
         });
     }
